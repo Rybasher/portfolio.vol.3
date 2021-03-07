@@ -4,37 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Document</title>
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/main.css">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
 
 </head>
 
 <body>
+    <div class="mask">
+        <div class="loader">
+            <span>L</span>
+            <span>e</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>i</span>
+            <span>e</span>
+            <span>v</span>
+        </div>
+    </div>
 
     <div class="wrapper">
         <header class="header">
 	<div class="header__container container">
 		<div class="logo">
-			<a href="">Kirill <span>Leontev</span> </a>
+			<a href="#main">Kirill <span>Leontev</span> </a>
 		</div>
 		<nav class="header__menu">
 			<ul class="header__ul">
 				<li class="header__li">
-					<a href="" class="header__link">Works</a>
+					<a href="#works" class="header__link">Works</a>
+				</li>
+
+				<li class="header__li">
+					<a href="#cooperate" class="header__link">Cooperate</a>
 				</li>
 				<li class="header__li">
-					<a href="" class="header__link">Contact</a>
+					<a href="#contacts" class="header__link">Contact</a>
 				</li>
 				<li class="header__li">
-					<a href="" class="header__link">Cooperate</a>
-				</li>
-				<li class="header__li">
-					<a href="" class="header__link">FAQ</a>
+					<a href="#faq" class="header__link">FAQ</a>
 				</li>
 			</ul>
 		</nav>
@@ -43,11 +73,20 @@
 			<span></span>
 			<span></span>
 		</div>
+		<!-- <div class="theme__switcher">
+			<div class="theme__container">
+				<div class="switcher"></div>
+			</div>
+		</div> -->
+		<label class="box">
+			<input hidden type="checkbox" />
+			<span></span>
+		</label>
 	</div>
 </header>
         <main>
-            <section class="section__main section">
-                <div class="container__main container">
+            <section class="section__main section" id="main">
+                <div class="container__main container wow animate__animated animate__fadeInUp">
                     <div class="info">
                         <p class="hello">Hello, i'm</p>
                         <h1 class="name">Kirill leontiev</h1>
@@ -64,15 +103,15 @@
                     </div>
                 </div>
             </section>
-            <section class="section__works section">
+            <section class="section__works section" id="works">
                 <div class="container__works container">
-                    <div class="container__header">
+                    <div class="container__header wow animate__animated animate__fadeInUp">
                         <h1 class="container__title">Portfolio</h1>
                         <p>Поисмотрите мои работы за последнее время</p>
                     </div>
                     <div class="container__body">
-                        <div class="works__categories">
-                            <div class="categories__wrapper">
+                        <div class="works__categories ">
+                            <div class="categories__wrapper wow animate__animated animate__fadeInUp">
                                 <button>All</button>
                                 <button>App</button>
                                 <button>website</button>
@@ -81,7 +120,7 @@
                         </div>
                         <div class="works">
 
-                            <div class="work__item">
+                            <div class="work__item wow animate__animated animate__fadeInUp">
                                 <div class="site__screen">
                                     <a href="#">
                                         <img src="img/portfolio/one.png" alt="">
@@ -93,7 +132,7 @@
                                     <p class="site__title">Project title</p>
                                 </div>
                             </div>
-                            <div class="work__item">
+                            <div class="work__item wow animate__animated animate__fadeInUp">
                                 <div class="site__screen">
                                     <a href="#">
                                         <img src="img/portfolio/one.png" alt="">
@@ -105,7 +144,7 @@
                                     <p class="site__title">Project title</p>
                                 </div>
                             </div>
-                            <div class="work__item">
+                            <div class="work__item wow animate__animated animate__fadeInUp">
                                 <div class="site__screen">
                                     <a href="#">
                                         <img src="img/portfolio/one.png" alt="">
@@ -117,7 +156,7 @@
                                     <p class="site__title">Project title</p>
                                 </div>
                             </div>
-                            <div class="work__item">
+                            <div class="work__item wow animate__animated animate__fadeInUp">
                                 <div class="site__screen">
                                     <a href="#">
                                         <img src="img/portfolio/one.png" alt="">
@@ -130,35 +169,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="button__more">
+                        <div class="button__more wow animate__animated animate__fadeInUp">
                             <button>More...</button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section__cooperate section">
+            <section class="section__cooperate section" id="cooperate">
                 <div class="container__cooperate container">
-                    <div class="container__header">
+                    <div class="container__header wow animate__animated animate__fadeInUp">
                         <h1 class="container__title">cooperate</h1>
                         <p>These are the companies i work with </p>
                     </div>
-                    <div class="cooperate__body">
-                        <div class="cooperate__item card" data-aos="flip-up" data-aos-duration="1800">
+                    <div class="cooperate__body ">
+                        <div class="cooperate__item card wow animate__animated animate__fadeInUp" data-aos="flip-up"
+                            data-aos-duration="1800">
+                            <div class="card-item ">
+
+                            </div>
+                        </div>
+                        <div class="cooperate__item card wow animate__animated animate__fadeInUp" data-aos="flip-up"
+                            data-aos-duration="1600">
                             <div class="card-item">
 
                             </div>
                         </div>
-                        <div class="cooperate__item card" data-aos="flip-up" data-aos-duration="1600">
+                        <div class="cooperate__item card wow animate__animated animate__fadeInUp" data-aos="flip-up"
+                            data-aos-duration="1200">
                             <div class="card-item">
 
                             </div>
                         </div>
-                        <div class="cooperate__item card" data-aos="flip-up" data-aos-duration="1200">
-                            <div class="card-item">
-
-                            </div>
-                        </div>
-                        <div class="cooperate__item card" data-aos="flip-up" data-aos-duration="600">
+                        <div class="cooperate__item card wow animate__animated animate__fadeInUp" data-aos="flip-up"
+                            data-aos-duration="600">
                             <div class="card-item">
 
                             </div>
@@ -173,7 +216,7 @@
             </section>
             <section class="section__contacts section" id="contacts">
                 <div class="container__contacts container">
-                    <div class="socials">
+                    <div class="socials wow animate__animated animate__fadeInUp">
                         <div class="soc_header" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
                             data-aos-duration="1100"><span>Вы можете</span> написать
                             мне в соцсетях</div>
@@ -193,7 +236,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form__container">
+                    <div class="form__container wow animate__animated animate__fadeInUp">
                         <div class="form__header" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
                             data-aos-duration="1100">
                             <span>Или</span> оставьте заявку прямо сдесь
@@ -221,6 +264,45 @@
                     </div>
                 </div>
             </section>
+            <section class="section__faq section" id="faq">
+                <div class="container__faq container">
+                    <div class="container__header wow animate__animated animate__fadeInUp">
+                        <h1 class="container__title">faq</h1>
+                        <p>Answers to possible questions</p>
+                    </div>
+                    <div class="container__body wow animate__animated animate__fadeInUp">
+                        <button class="accordion ">
+                            <p class="question">ЧТО ЛУЧШЕ - TILDA ИЛИ ПОЛНОЦЕННАЯ ВЁРСТКА?</p>
+                            <div class="arrow"><span></span><span></span></div>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="accordion">
+                            <p class="question">КАК СТАТЬ ТАКИМЖЕ ВЕЛИЧАЙШИМ ПРОГРАММИСТОМ?</p>
+                            <div class="arrow"><span></span><span></span></div>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="accordion">
+                            <p class="question">МОЖЕТЕ НАУЧИТЬ МЕНЯ РАЗРАБАТЫВАТЬ САЙТЫ?</p>
+                            <div class="arrow"><span></span><span></span></div>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
         </main>
@@ -229,8 +311,12 @@
 </footer>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="js/script.js"></script>
     <script>
         // AOS.init();
