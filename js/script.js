@@ -1,8 +1,10 @@
 let burger = document.querySelector(".burger");
 let menu = document.querySelector(".header__menu");
+let body = document.querySelector('body');
 burger.addEventListener("click", function () {
 	burger.classList.toggle("active");
 	menu.classList.toggle("active");
+	body.classList.toggle('lock')
 })
 
 const cards = document.querySelectorAll('.card');
@@ -100,5 +102,16 @@ for (let anchor of anchors) {
 			behavior: 'smooth',
 			block: 'start'
 		})
+	})
+}
+
+let links = document.querySelectorAll('.header__link');
+
+for (let link of links) {
+	link.addEventListener('click', function () {
+		burger.classList.remove('active');
+		menu.classList.remove('active');
+		body.classList.remove('lock');
+
 	})
 }
